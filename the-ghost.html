@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook: The Ghost</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Inter:wght@400;500;700&display=swap');
+        :root {
+            --primary-cyan: #00ffff;
+            --primary-pink: #ff6b6b;
+            --primary-gold: #ffd700;
+            --bg-primary: #0a0a0a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --border-color: rgba(0, 255, 255, 0.3);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #1a0a1a 50%, #0a1a1a 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        h1, h2, h3 { font-family: 'Orbitron', monospace; text-shadow: 0 0 10px currentColor; }
+        h1 { font-size: 3rem; font-weight: 900; color: var(--primary-cyan); }
+        h2 { font-size: 2rem; color: var(--primary-cyan); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-top: 3rem; }
+        h3 { font-size: 1.5rem; color: var(--primary-gold); margin-top: 2rem; }
+        .content-section { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(5px); }
+        .intro-text { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; color: var(--text-secondary); text-align: center; max-width: 80%; margin: 1rem auto 2rem; }
+        ul { list-style: none; padding-left: 0; }
+        li { position: relative; padding-left: 2em; margin-bottom: 1em; }
+        li::before { content: '⚡'; position: absolute; left: 0; color: var(--primary-cyan); font-size: 1.2em; }
+        strong { color: var(--text-primary); font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>THE GHOST</h1>
+            <p class="intro-text">You are the whisper in the static. You move through the city's digital and physical spaces unseen. The Wardens can't catch what they can't see.</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Creating Your Ghost</h2>
+            <h3>Look:</h3>
+            <ul>
+                <li><strong>Eyes:</strong> Watchful, calculating, hidden, sharp.</li>
+                <li><strong>Style:</strong> Dark, practical clothing with no logos, a hood or a mask, lightweight gear, clothes that blend into any crowd.</li>
+                <li><strong>Body:</strong> Agile, quiet, disciplined, always poised for action.</li>
+            </ul>
+
+            <h3>Stats:</h3>
+            <ul>
+                <li><strong>Rebellion:</strong> +2</li>
+                <li><strong>Focus:</strong> +1</li>
+                <li><strong>Creativity:</strong> +0</li>
+                <li><strong>Connection:</strong> -1</li>
+            </ul>
+
+            <h3>Your Balance: Individuality &lt;---&gt; Conformity</h3>
+            <p>You are a weapon, a tool of the rebellion, sacrificing your own identity for the sake of the mission. Will you hold onto the person you are beneath the mask, or will you conform completely to your role and become nothing more than a ghost?</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Ghost Moves</h2>
+            <h3>Starting Move</h3>
+            <p><strong>Fade into the Static:</strong> When you want to become unseen in a physical or digital space, roll +Rebellion. On a 10+, you vanish completely for the scene. On a 7-9, you vanish, but you must either leave something important behind or you can't stay hidden for long.</p>
+            
+            <h3>Choose Two:</h3>
+            <ul>
+                <li><strong>Strike from the Shadows:</strong> When you attack an enemy from stealth, roll +Rebellion. On a 10+, you deal a decisive blow, either neutralizing them non-lethally or creating a major distraction. On a 7-9, you strike your target, but you are immediately exposed.</li>
+                <li><strong>Plant a Seed of Doubt:</strong> When you have access to an agent's files, you can leave a subtle message. Roll +Rebellion. On a success, you plant a seed of doubt in their mind, causing them to hesitate later. On a 7-9, your message also leaves a trace.</li>
+                <li><strong>Infiltrator:</strong> When you try to bypass a security system, roll +Focus. On a 10+, you get through cleanly and without a trace. On a 7-9, you get through, but you must either leave something behind, take something, or disable security in a loud and obvious way.</li>
+                <li><strong>I Know Their Secrets:</strong> Once per session, you can ask the GM one question about the security, layout, or personnel of a location you are about to infiltrate. The GM must answer honestly.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Connections & Gear</h2>
+            <h3>Connections:</h3>
+            <ul>
+                <li>Who in your crew is the only person who has seen your real face?</li>
+                <li>Who did you pull out of a tight spot without them ever knowing you were there?</li>
+            </ul>
+            <h3>Gear:</h3>
+            <p>You start with a set of dark, unmarked clothes, a data-knife for hacking terminals, and a choice of either a limited-use personal cloaking device or a set of advanced lockpicks.</p>
+        </section>
+    </div>
+</body>
+</html>
