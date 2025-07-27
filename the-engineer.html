@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook: The Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Inter:wght@400;500;700&display=swap');
+        :root {
+            --primary-cyan: #00ffff;
+            --primary-pink: #ff6b6b;
+            --primary-gold: #ffd700;
+            --bg-primary: #0a0a0a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --border-color: rgba(0, 255, 255, 0.3);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #1a0a1a 50%, #0a1a1a 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        h1, h2, h3 { font-family: 'Orbitron', monospace; text-shadow: 0 0 10px currentColor; }
+        h1 { font-size: 3rem; font-weight: 900; color: var(--primary-cyan); }
+        h2 { font-size: 2rem; color: var(--primary-cyan); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-top: 3rem; }
+        h3 { font-size: 1.5rem; color: var(--primary-gold); margin-top: 2rem; }
+        .content-section { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(5px); }
+        .intro-text { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; color: var(--text-secondary); text-align: center; max-width: 80%; margin: 1rem auto 2rem; }
+        ul { list-style: none; padding-left: 0; }
+        li { position: relative; padding-left: 2em; margin-bottom: 1em; }
+        li::before { content: '⚡'; position: absolute; left: 0; color: var(--primary-cyan); font-size: 1.2em; }
+        strong { color: var(--text-primary); font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>THE ENGINEER</h1>
+            <p class="intro-text">You are the ghost in their machine. You see the world not as a physical space, but as a series of interconnected systems. They built a perfect system; you're here to prove that nothing is perfect.</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Creating Your Engineer</h2>
+            <h3>Look:</h3>
+            <ul>
+                <li><strong>Eyes:</strong> Focused, tired, scanning, augmented.</li>
+                <li><strong>Style:</strong> Practical jumpsuit, a worn toolkit, data-goggles, clothes with too many pockets, cybernetic enhancements.</li>
+                <li><strong>Body:</strong> Wiry, tense, covered in old soldering burns, constantly fidgeting.</li>
+            </ul>
+
+            <h3>Stats:</h3>
+            <ul>
+                <li><strong>Focus:</strong> +2</li>
+                <li><strong>Rebellion:</strong> +1</li>
+                <li><strong>Connection:</strong> +0</li>
+                <li><strong>Creativity:</strong> -1</li>
+            </ul>
+
+            <h3>Your Balance: Individuality &lt;---&gt; Conformity</h3>
+            <p>You understand the system better than anyone, and you see how easily it could be exploited. Will you use your skills to build a new, more open world, or will you be tempted by the power that comes from conforming to the system?</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Engineer Moves</h2>
+            <h3>Starting Move</h3>
+            <p><strong>Jury-Rig:</strong> When you need to create a gadget on the fly using junk, roll +Focus. On a 10+, your device works perfectly, once. On a 7-9, it works, but with a glitch, an unexpected side effect, or it breaks after a single use.</p>
+            
+            <h3>Choose Two:</h3>
+            <ul>
+                <li><strong>Crack the Code:</strong> When you attempt to hack a Synapse system, roll +Focus. On a 10+, you're in and can get data or take control for a scene. On a 7-9, you get what you want, but you trip a silent alarm or leave a digital footprint.</li>
+                <li><strong>Build a Sanctuary:</strong> When you have time and resources, you can fortify a location. Roll +Focus. On a 10+, you create a true Sanctuary, hidden and secure. On a 7-9, your Sanctuary is secure, but it has a single, exploitable flaw.</li>
+                <li><strong>I've Seen This Before:</strong> When you encounter a piece of Synapse technology, roll +Focus. On a 10+, the GM will tell you one of its strengths and one of its weaknesses. On a 7-9, the GM will only tell you about a strength or a weakness, your choice.</li>
+                <li><strong>Overclock:</strong> You can push a piece of technology beyond its limits. It does something spectacular, then immediately breaks in a dramatic and possibly dangerous way.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Connections & Gear</h2>
+            <h3>Connections:</h3>
+            <ul>
+                <li>Who in your crew relies on you to keep their gear running, and what is that piece of gear?</li>
+                <li>Who do you trust with the master key to your private workshop and sanctuary?</li>
+            </ul>
+            <h3>Gear:</h3>
+            <p>You start with a custom multi-tool, a powerful datapad, and a bag filled with scavenged wires, processors, and other useful junk.</p>
+        </section>
+    </div>
+</body>
+</html>
