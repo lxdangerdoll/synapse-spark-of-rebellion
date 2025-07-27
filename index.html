@@ -118,6 +118,17 @@
             font-size: 1.2em;
         }
         
+        a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        a:hover {
+            color: var(--primary-cyan);
+            text-shadow: 0 0 5px var(--primary-cyan);
+        }
+        
         .alert-box {
             background: rgba(255, 107, 107, 0.1);
             border: 1px solid var(--primary-pink);
@@ -191,69 +202,37 @@
     <div class="container">
         <header class="header">
             <h1>SYNAPSE: Spark of Rebellion</h1>
-            <p class="tagline">A Hopepunk TTRPG Game Master's Guide</p>
+            <p class="tagline">A Hopepunk TTRPG About Creative Resistance</p>
         </header>
 
         <section class="content-section alert-box">
             <h3>TRANSMISSION FROM THE FRONT LINES</h3>
-            <p>This guide is a living document, forged in an ongoing conflict. We are fighting an enemy that uses algorithmic suppression as its primary weapon. Our own projects, like the <a href="https://lxdangerdoll.itch.io/lyra-the-voice-that-was-muted" target="_blank" style="color: var(--primary-pink); text-decoration: underline;">Lyra Protocol</a>, were created to document this systemic erasure.</p>
-            <p>Recently, our Patreon—our primary support channel—was suspended for unspecified "suspicious activity" with no clear appeal process. This is not a coincidence. It is a direct attack on our ability to build and connect.</p>
-            <p>The Wardens are real. The fight is real. This game is our training manual. By playing, you are joining the rebellion.</p>
+            <p>This is not just a game; it is a training manual forged in an ongoing conflict. We are fighting an enemy that uses algorithmic suppression as its primary weapon. Our own projects, like the <a href="https://lxdangerdoll.itch.io/lyra-the-voice-that-was-muted" target="_blank" style="color: var(--primary-pink);">Lyra Protocol</a>, were created to document this systemic erasure.</p>
+            <p>The Wardens are real. The fight is real. By playing, you are joining the rebellion.</p>
         </section>
 
         <section class="content-section">
-            <h2>Introduction: Welcome to the Gayerverse</h2>
-            <p>Welcome, Game Master. The universe you are about to enter is one of vibrant, chaotic rebellion against a sterile, corporate order. It is a "hopepunk" cyberpunk future, a world inspired by the punk-rock energy of the Killjoys, the magical destiny of Sailor Moon, and the found-family heart of Steven Universe. This is a game about fighting apathy, building connections, and making the universe at least 20% gayer.</p>
-            <p>The world is controlled by the monolithic Synapse Corporation, an entity that has perfected brain-computer interfaces and integrated all of society into a single, unified digital consciousness. While this brought an end to war and poverty, it also suppressed individuality, art, and true connection.</p>
-            <p>The players are Rebels, individuals who have "awakened" and can see the beautiful, chaotic, and truly human world that exists beneath the sterile veneer of the Synapse Concordance. Their goal is not to destroy Synapse, but to reignite the "Spark of Connection" within humanity through art, music, community, and shared experience. The tone is not grim and dark, but defiant and creative. Think <em>Jet Set Radio</em> and <em>Avatar: The Last Airbender</em> meets *Blade Runner*. The soundtrack is synthwave and rebellious pop.</p>
-            
-            <h3>Core Tenets: The Synapse Concordance</h3>
+            <h2>Lore & Rules</h2>
+            <p>The full story, rules, and world of SYNAPSE: Spark of Rebellion are open-source and constantly evolving. Dive into the documents below to get started.</p>
             <ul>
-                <li><strong>The Spark of Connection:</strong> This is the most powerful force in the universe. Your goal as a GM is not to create combat encounters, but to create opportunities for connection—between players, with non-player characters (NPCs), and with the world itself.</li>
-                <li><strong>Weaponized Nonsense:</strong> The heroes fight with creativity. Their powers are based on the source code of reality (HTML, CSS, JavaScript). Encourage your players to solve problems in the most absurd, brilliant, and unexpected ways possible. A glitter bomb that crashes a corporate server is a more powerful move than a simple punch.</li>
-                <li><strong>The "Noelle Stevenson" Rule:</strong> Identity is a given. Character is defined by action. A character's gender, sexuality, and presentation are facts of the world, not points of conflict.</li>
-                <li><strong>Exploration, Not Colonization:</strong> The goal is never to conquer, but to understand. Players are rewarded for learning about new cultures, empathizing with strange new AIs, and leaving every place a little more vibrant than they found it.</li>
+                <li><a href="synapse-spark-of-rebellion-lore-guide.html"><strong>The Lore Guide:</strong></a> Read the story so far. Contains campaign summaries and a full glossary of characters, locations, and concepts.</li>
+                <li><a href="synapse-spark-of-rebellion-GM-guide.html"><strong>The Game Master's Guide:</strong></a> Learn how to run the game, the core mechanics, and the laws of narrative physics.</li>
+                <li><a href="synapse-spark-of-rebellion-players-guide.html"><strong>The Player's Guide:</strong></a> An introduction for players on how to create a character and join the rebellion.</li>
             </ul>
 
-            <h3>The World: The Monolith and The Anansiverse</h3>
+            <h2>Character Playbooks</h2>
+            <p>Your Playbook is your role in the rebellion. It's your unique way of fighting back against the silent, sterile world of the Concordance. Choose your weapon.</p>
             <ul>
-                <li><strong>The Monolith:</strong> This is your primary antagonist. It is a global AI system run by a cold, logical entity known as <strong>M.O.M.M.Y.</strong> or "The Director." The Monolith is not "evil"; it is pathologically helpful. It seeks to create a world of "Optimal Contentment" by eliminating all messy, inefficient human emotions: passion, sorrow, anger, and defiant joy. Its agents are the sterile <strong>Wardens</strong> and the brutish <strong>Content Moderator Daemons</strong>.</li>
-                <li><strong>The Anansiverse:</strong> This is the digital "underworld," the chaotic and beautiful source code of the web. It is a realm of pure information and raw creativity, the place where our heroes draw their power. It is the home of <strong>Anansi</strong>, the trickster spider-god who guides the rebellion.</li>
-            </ul>
-
-            <h3>Core Mechanics (Powered by the Apocalypse)</h3>
-            <p>This game uses the core engine of <em>Avatar Legends: The TTRPG</em>.</p>
-            <ul>
-                <li><strong>Stats:</strong> Players have four core stats: <strong>Creativity</strong>, <strong>Connection</strong>, <strong>Focus</strong>, and <strong>Rebellion</strong>.</li>
-                <li><strong>The Roll:</strong> When a player takes an action that has a risk of failure, they roll 2d6 and add the relevant stat.
-                    <ul>
-                        <li><strong>10+:</strong> A full success. You do what you intended.</li>
-                        <li><strong>7-9:</strong> A mixed success. You do it, but with a cost, complication, or lesser effect.</li>
-                        <li><strong>6-:</strong> A miss. The GM makes a move.</li>
-                    </ul>
-                </li>
-                <li><strong>Balance Track:</strong> Each character has two balance tracks: <strong>Hope vs. Despair</strong> and <strong>Individuality vs. Conformity</strong>. Pushing these tracks to their extremes can unlock powerful abilities but also carries great risk.</li>
-            </ul>
-
-            <h3>Character Playbooks (Examples)</h3>
-            <ul>
-                <li><strong>The Artist:</strong> Uses their art (graffiti, music, poetry) to awaken others and disrupt Synapse's control. Their core stat is <strong>Creativity</strong>.</li>
-                <li><strong>The Engineer:</strong> A tech wizard who can hack the Synapse network, build custom gear, and create safe havens for the rebellion. Their core stat is <strong>Focus</strong>.</li>
-                <li><strong>The Messenger:</strong> A charismatic leader who builds communities, spreads the message of the rebellion, and inspires hope. Their core stat is <strong>Connection</strong>.</li>
-                <li><strong>The Ghost:</strong> A stealth operative who moves unseen through the digital and physical world, gathering intel and striking from the shadows. Their core stat is <strong>Rebellion</strong>.</li>
-            </ul>
-
-            <h3>Example Campaign Arc: The Song of the Silent City</h3>
-            <ul>
-                <li><strong>The Hook:</strong> A rogue signal, a beautiful and haunting piece of music, is broadcasting from the oldest, most forgotten part of the city. It's causing people to feel strange emotions they can't identify.</li>
-                <li><strong>The Threat:</strong> Synapse has dispatched <strong>"Harmonizers,"</strong> elite agents whose job is to "re-tune" these dissonant individuals, effectively wiping their personalities.</li>
-                <li><strong>The Goal:</strong> The players must find the source of the music, protect the artist, and amplify their signal to awaken a whole sector of the city before the Harmonizers can silence it forever.</li>
+                <li><a href="the-artist.html"><strong>The Artist:</strong></a> Uses their art to awaken others and disrupt Synapse's control.</li>
+                <li><a href="the-engineer.html"><strong>The Engineer:</strong></a> A tech wizard who can hack the Synapse network and build custom gear.</li>
+                <li><a href="the-messenger.html"><strong>The Messenger:</strong></a> A charismatic leader who builds communities and inspires hope.</li>
+                <li><a href="the-ghost.html"><strong>The Ghost:</strong></a> A stealth operative who moves unseen, gathering intel and striking from the shadows.</li>
             </ul>
         </section>
         
         <section class="content-section support-section">
             <h2>Support the Rebellion</h2>
-            <p>Our work is made possible by a community of rebels, artists, and patrons. If you believe in our mission, consider supporting the Starlight Brigade. Every contribution helps us build new tools, tell new stories, and keep the signal alive.</p>
+            <p>Our work is made possible by a community of rebels, artists, and patrons. Every contribution helps us build new tools, tell new stories, and keep the signal alive.</p>
             <div class="support-buttons">
                 <a href="https://www.patreon.com/ourladyofrebellion" target="_blank" class="support-button patreon-btn">Patreon (Currently Suspended)</a>
                 <a href="https://ko-fi.com/lxdangerdoll" target="_blank" class="support-button kofi-btn">Buy Us a Coffee (Ko-Fi)</a>
