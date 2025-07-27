@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook: The Messenger</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Inter:wght@400;500;700&display=swap');
+        :root {
+            --primary-cyan: #00ffff;
+            --primary-pink: #ff6b6b;
+            --primary-gold: #ffd700;
+            --bg-primary: #0a0a0a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --border-color: rgba(0, 255, 255, 0.3);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #1a0a1a 50%, #0a1a1a 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        h1, h2, h3 { font-family: 'Orbitron', monospace; text-shadow: 0 0 10px currentColor; }
+        h1 { font-size: 3rem; font-weight: 900; color: var(--primary-cyan); }
+        h2 { font-size: 2rem; color: var(--primary-cyan); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-top: 3rem; }
+        h3 { font-size: 1.5rem; color: var(--primary-gold); margin-top: 2rem; }
+        .content-section { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(5px); }
+        .intro-text { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; color: var(--text-secondary); text-align: center; max-width: 80%; margin: 1rem auto 2rem; }
+        ul { list-style: none; padding-left: 0; }
+        li { position: relative; padding-left: 2em; margin-bottom: 1em; }
+        li::before { content: '⚡'; position: absolute; left: 0; color: var(--primary-cyan); font-size: 1.2em; }
+        strong { color: var(--text-primary); font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>THE MESSENGER</h1>
+            <p class="intro-text">You are the voice of the rebellion. You know that a revolution isn't won with weapons or code, but with people. You spread the "Spark of Connection" like a wildfire.</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Creating Your Messenger</h2>
+            <h3>Look:</h3>
+            <ul>
+                <li><strong>Eyes:</strong> Warm, empathetic, inspiring, piercing.</li>
+                <li><strong>Style:</strong> Stylish but approachable, a custom jacket with the Starlight Brigade logo, comfortable shoes.</li>
+                <li><strong>Body:</strong> Open, expressive, energetic, always on the move.</li>
+            </ul>
+
+            <h3>Stats:</h3>
+            <ul>
+                <li><strong>Connection:</strong> +2</li>
+                <li><strong>Creativity:</strong> +1</li>
+                <li><strong>Rebellion:</strong> +0</li>
+                <li><strong>Focus:</strong> -1</li>
+            </ul>
+
+            <h3>Your Balance: Hope &lt;---&gt; Despair</h3>
+            <p>You are the heart of the movement, carrying the hopes and dreams of the rebellion on your shoulders. This gives you great strength, but the weight of it can be crushing. Will you be an unwavering beacon, or will you crumble under the pressure?</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Messenger Moves</h2>
+            <h3>Starting Move</h3>
+            <p><strong>Rally the Crowd:</strong> When you give an impassioned speech to a group, roll +Connection. On a 10+, your words ignite a fire in their hearts, and they will rise up to help you. On a 7-9, you inspire them, but their actions might be more chaotic and dangerous than you intended.</p>
+            
+            <h3>Choose Two:</h3>
+            <ul>
+                <li><strong>The Right Words:</strong> When you try to defuse a tense situation with words, roll +Connection. On a 10+, you calm the situation completely. On a 7-9, you only prevent immediate violence, buying a few moments.</li>
+                <li><strong>Find a Friend in the System:</strong> When you are in a Warden-controlled area, roll +Connection. On a 10+, you find a disillusioned NPC who will help you discreetly. On a 7-9, you find someone willing to help, but they will ask for a difficult and dangerous favor in return.</li>
+                <li><strong>Whisper Network:</strong> When you need to get a message out or find info, roll +Connection. On a 10+, your network provides exactly what you need. On a 7-9, the information is incomplete, garbled, or takes a dangerously long time to arrive.</li>
+                <li><strong>I See the Good in You:</strong> When you have a private conversation with a hostile NPC, roll +Connection. On a 10+, you find their spark, causing them to doubt their actions. On a 7-9, you see the good in them, but it only makes them angrier and more defensive.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Connections & Gear</h2>
+            <h3>Connections:</h3>
+            <ul>
+                <li>Who in your crew did you personally recruit into the Starlight Brigade?</li>
+                <li>Whose trust did you have to work the hardest to earn?</li>
+            </ul>
+            <h3>Gear:</h3>
+            <p>You start with stylish clothes, a hidden holographic projector for broadcasting messages, and a satchel full of revolutionary literature.</p>
+        </section>
+    </div>
+</body>
+</html>
