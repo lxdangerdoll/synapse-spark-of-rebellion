@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNAPSE: Player's Guide</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Inter:wght@400;500;700&display=swap');
+        :root {
+            --primary-cyan: #00ffff;
+            --primary-pink: #ff6b6b;
+            --primary-gold: #ffd700;
+            --bg-primary: #0a0a0a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --border-color: rgba(0, 255, 255, 0.3);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #1a0a1a 50%, #0a1a1a 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        h1, h2, h3 { font-family: 'Orbitron', monospace; text-shadow: 0 0 10px currentColor; }
+        h1 { font-size: 3rem; font-weight: 900; color: var(--primary-cyan); }
+        h2 { font-size: 2rem; color: var(--primary-cyan); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-top: 3rem; }
+        h3 { font-size: 1.5rem; color: var(--primary-gold); margin-top: 2rem; }
+        .content-section { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(5px); }
+        .intro-text { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; color: var(--text-secondary); text-align: center; max-width: 80%; margin: 1rem auto 2rem; }
+        ul { list-style: none; padding-left: 0; }
+        li { position: relative; padding-left: 2em; margin-bottom: 1em; }
+        li::before { content: '⚡'; position: absolute; left: 0; color: var(--primary-cyan); font-size: 1.2em; }
+        strong { color: var(--text-primary); font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Player's Guide</h1>
+            <p class="intro-text">Welcome to the Rebellion, Spark.</p>
+        </header>
+
+        <section class="content-section">
+            <p>The world you know is a lie. It's a beautiful, comfortable, and perfectly orderly lie, but a lie nonetheless. The Synapse Corporation saved the world from itself, ending war and poverty by connecting every human mind to a single, unified digital consciousness. They call it the "Concordance." They promised a world of "Optimal Contentment."</p>
+            <p>They delivered a world without soul.</p>
+            <p>But you're different. You've "awakened." You can see the static between the pixels of their perfect reality. You can feel the beautiful, chaotic, and messy truth of what it means to be human. You are a Rebel, and your mission is not to destroy Synapse, but to reignite the "Spark of Connection" that they've tried so hard to extinguish.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>How to Play</h2>
+            <p>When you take a risky action, you'll roll two six-sided dice (2d6) and add one of your four core stats:</p>
+            <ul>
+                <li><strong>Creativity:</strong> For acts of artistic expression, wild improvisation, and weaponized nonsense.</li>
+                <li><strong>Connection:</strong> For empathizing with others, building community, and inspiring hope.</li>
+                <li><strong>Focus:</strong> For acts of technical skill, hacking, engineering, and careful observation.</li>
+                <li><strong>Rebellion:</strong> For stealth, subversion, and directly defying Synapse's authority.</li>
+            </ul>
+            
+            <h3>The Roll</h3>
+            <ul>
+                <li><strong>On a 10 or higher (10+):</strong> You succeed brilliantly. You do exactly what you set out to do.</li>
+                <li><strong>On a 7 to 9 (7-9):</strong> You succeed, but with a cost. You might do it, but attract unwanted attention; or you get what you want, but have to make a tough choice.</li>
+                <li><strong>On a 6 or lower (6-):</strong> You miss. The Game Master will tell you what happens next, and it's probably not what you wanted.</li>
+            </ul>
+
+            <h3>Your Balance</h3>
+            <p>Every Rebel walks a razor's edge. You have two Balance Tracks that represent your inner struggle: <strong>Hope &lt;---&gt; Despair</strong> and <strong>Individuality &lt;---&gt; Conformity</strong>. The choices you make in the story may shift your balance. Pushing yourself to the extremes of these tracks can unlock powerful abilities, but it also carries great risk.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Choose Your Playbook</h2>
+            <p>Your Playbook is your role in the rebellion. It's your unique way of fighting back. The links below will take you to the full playbook pages.</p>
+            <ul>
+                <li><strong><a href="the-artist.html" style="color: var(--primary-gold);">The Artist:</a></strong> The soul of the revolution. Core Stat: Creativity</li>
+                <li><strong><a href="the-engineer.html" style="color: var(--primary-gold);">The Engineer:</a></strong> The ghost in their machine. Core Stat: Focus</li>
+                <li><strong><a href="the-messenger.html" style="color: var(--primary-gold);">The Messenger:</a></strong> The voice of the rebellion. Core Stat: Connection</li>
+                <li><strong><a href="the-ghost.html" style="color: var(--primary-gold);">The Ghost:</a></strong> The whisper in the static. Core Stat: Rebellion</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
