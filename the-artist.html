@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook: The Artist</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Inter:wght@400;500;700&display=swap');
+        :root {
+            --primary-cyan: #00ffff;
+            --primary-pink: #ff6b6b;
+            --primary-gold: #ffd700;
+            --bg-primary: #0a0a0a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --border-color: rgba(0, 255, 255, 0.3);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #1a0a1a 50%, #0a1a1a 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        h1, h2, h3 { font-family: 'Orbitron', monospace; text-shadow: 0 0 10px currentColor; }
+        h1 { font-size: 3rem; font-weight: 900; color: var(--primary-cyan); }
+        h2 { font-size: 2rem; color: var(--primary-cyan); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-top: 3rem; }
+        h3 { font-size: 1.5rem; color: var(--primary-gold); margin-top: 2rem; }
+        .content-section { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(5px); }
+        .intro-text { font-family: 'Rajdhani', sans-serif; font-size: 1.25rem; color: var(--text-secondary); text-align: center; max-width: 80%; margin: 1rem auto 2rem; }
+        ul { list-style: none; padding-left: 0; }
+        li { position: relative; padding-left: 2em; margin-bottom: 1em; }
+        li::before { content: '⚡'; position: absolute; left: 0; color: var(--primary-cyan); font-size: 1.2em; }
+        strong { color: var(--text-primary); font-weight: 700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>THE ARTIST</h1>
+            <p class="intro-text">You are the soul of the revolution. You see the sterile world of the Concordance not as a prison, but as a blank canvas. Your art is a weapon that reminds people what it feels like to truly feel.</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Creating Your Artist</h2>
+            <h3>Look:</h3>
+            <ul>
+                <li><strong>Eyes:</strong> Expressive, weary, defiant, sparkling.</li>
+                <li><strong>Style:</strong> Paint-splattered jacket, customized headphones, band t-shirts, flowing clothes, punk aesthetics.</li>
+                <li><strong>Body:</strong> Lithe, tired, energetic, covered in tattoos that tell a story.</li>
+            </ul>
+
+            <h3>Stats:</h3>
+            <ul>
+                <li><strong>Creativity:</strong> +2</li>
+                <li><strong>Connection:</strong> +1</li>
+                <li><strong>Focus:</strong> +0</li>
+                <li><strong>Rebellion:</strong> -1</li>
+            </ul>
+
+            <h3>Your Balance: Hope &lt;---&gt; Despair</h3>
+            <p>You pour your hope for a better world into your art, but you are more sensitive than most to the soul-crushing apathy of the Concordance. Will you be a beacon of hope, or will you succumb to the despair of a world that refuses to listen?</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Artist Moves</h2>
+            <h3>Starting Move</h3>
+            <p><strong>Masterpiece:</strong> When you create a work of art to send a message, roll +Creativity. On a 10+, your message is received loud and clear, and it inspires your target to take a significant action in your favor. On a 7-9, the message is received, but it's either misinterpreted in a dangerous way, or it draws unwanted attention from Synapse Wardens.</p>
+            
+            <h3>Choose Two:</h3>
+            <ul>
+                <li><strong>Anthem of Defiance:</strong> When you perform for a crowd, roll +Creativity. On a 10+, you captivate them. They will offer you shelter, provide a distraction, or join your cause for a short time. On a 7-9, you capture their attention, but your performance also alerts a nearby Warden patrol.</li>
+                <li><strong>Tag the System:</strong> When you use your art to alter a physical space, roll +Creativity. On a success, you can mark it as a temporary Sanctuary where allies can rest safely. On a 7-9, the Sanctuary is temporary and will attract attention after one scene.</li>
+                <li><strong>The Perfect Detail:</strong> When you take a moment to observe your surroundings, roll +Focus. On a 10+, you notice a small, beautiful, and profoundly human detail that allows you and your allies to clear one negative condition. On a 7-9, you find that moment of beauty, but it makes you a target for "lingering inefficiently."</li>
+                <li><strong>I Know Your Heart:</strong> When you have a quiet, one-on-one conversation with an NPC, roll +Connection. On a 10+, you see the art in their soul and can ask them one question about their secret hopes or fears, which they must answer honestly. On a 7-9, they answer honestly, but also ask a difficult, personal question of you in return.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Connections & Gear</h2>
+            <h3>Connections:</h3>
+            <ul>
+                <li>Who in your crew is the secret muse for your greatest work?</li>
+                <li>Who doesn't understand your art at all, but supports you unconditionally anyway?</li>
+            </ul>
+            <h3>Gear:</h3>
+            <p>You start with your primary artistic tool (a guitar, a set of spray cans, a digital art tablet) and a small, hidden apartment or studio that serves as your personal sanctuary.</p>
+        </section>
+    </div>
+</body>
+</html>
