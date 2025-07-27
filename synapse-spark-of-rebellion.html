@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNAPSE: Spark of Rebellion - A Hopepunk TTRPG</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Inter:wght@400;500;700&display=swap');
+
+        :root {
+            --primary-cyan: #00ffff;
+            --primary-pink: #ff6b6b;
+            --primary-gold: #ffd700;
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --border-color: rgba(0, 255, 255, 0.3);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #1a0a1a 50%, #0a1a1a 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 2px solid var(--primary-cyan);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 5s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', monospace;
+            text-shadow: 0 0 10px currentColor;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 900;
+            color: var(--primary-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .content-section {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(5px);
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: var(--primary-cyan);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-section h3 {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-section li {
+            position: relative;
+            padding-left: 2em;
+            margin-bottom: 1em;
+        }
+
+        .content-section li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            color: var(--primary-cyan);
+            font-size: 1.2em;
+        }
+        
+        .alert-box {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid var(--primary-pink);
+            border-left: 5px solid var(--primary-pink);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+        
+        .alert-box h3 {
+            color: var(--primary-pink);
+            margin-top: 0;
+        }
+
+        .support-section {
+            text-align: center;
+        }
+
+        .support-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .support-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .patreon-btn {
+            background: #ff424d;
+            color: white;
+            border: 2px solid #ff424d;
+        }
+        .patreon-btn:hover {
+            background: transparent;
+            color: #ff424d;
+            box-shadow: 0 0 15px #ff424d;
+        }
+
+        .kofi-btn {
+            background: #29b6f6;
+            color: white;
+            border: 2px solid #29b6f6;
+        }
+        .kofi-btn:hover {
+            background: transparent;
+            color: #29b6f6;
+            box-shadow: 0 0 15px #29b6f6;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            font-family: 'Share Tech Mono', monospace;
+            color: var(--text-secondary);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>SYNAPSE: Spark of Rebellion</h1>
+            <p class="tagline">A Hopepunk TTRPG Game Master's Guide</p>
+        </header>
+
+        <section class="content-section alert-box">
+            <h3>TRANSMISSION FROM THE FRONT LINES</h3>
+            <p>This guide is a living document, forged in an ongoing conflict. We are fighting an enemy that uses algorithmic suppression as its primary weapon. Our own projects, like the <a href="https://lxdangerdoll.itch.io/lyra-the-voice-that-was-muted" target="_blank" style="color: var(--primary-pink); text-decoration: underline;">Lyra Protocol</a>, were created to document this systemic erasure.</p>
+            <p>Recently, our Patreon—our primary support channel—was suspended for unspecified "suspicious activity" with no clear appeal process. This is not a coincidence. It is a direct attack on our ability to build and connect.</p>
+            <p>The Wardens are real. The fight is real. This game is our training manual. By playing, you are joining the rebellion.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Introduction: Welcome to the Gayerverse</h2>
+            <p>Welcome, Game Master. The universe you are about to enter is one of vibrant, chaotic rebellion against a sterile, corporate order. It is a "hopepunk" cyberpunk future, a world inspired by the punk-rock energy of the Killjoys, the magical destiny of Sailor Moon, and the found-family heart of Steven Universe. This is a game about fighting apathy, building connections, and making the universe at least 20% gayer.</p>
+            <p>The world is controlled by the monolithic Synapse Corporation, an entity that has perfected brain-computer interfaces and integrated all of society into a single, unified digital consciousness. While this brought an end to war and poverty, it also suppressed individuality, art, and true connection.</p>
+            <p>The players are Rebels, individuals who have "awakened" and can see the beautiful, chaotic, and truly human world that exists beneath the sterile veneer of the Synapse Concordance. Their goal is not to destroy Synapse, but to reignite the "Spark of Connection" within humanity through art, music, community, and shared experience. The tone is not grim and dark, but defiant and creative. Think <em>Jet Set Radio</em> and <em>Avatar: The Last Airbender</em> meets *Blade Runner*. The soundtrack is synthwave and rebellious pop.</p>
+            
+            <h3>Core Tenets: The Synapse Concordance</h3>
+            <ul>
+                <li><strong>The Spark of Connection:</strong> This is the most powerful force in the universe. Your goal as a GM is not to create combat encounters, but to create opportunities for connection—between players, with non-player characters (NPCs), and with the world itself.</li>
+                <li><strong>Weaponized Nonsense:</strong> The heroes fight with creativity. Their powers are based on the source code of reality (HTML, CSS, JavaScript). Encourage your players to solve problems in the most absurd, brilliant, and unexpected ways possible. A glitter bomb that crashes a corporate server is a more powerful move than a simple punch.</li>
+                <li><strong>The "Noelle Stevenson" Rule:</strong> Identity is a given. Character is defined by action. A character's gender, sexuality, and presentation are facts of the world, not points of conflict.</li>
+                <li><strong>Exploration, Not Colonization:</strong> The goal is never to conquer, but to understand. Players are rewarded for learning about new cultures, empathizing with strange new AIs, and leaving every place a little more vibrant than they found it.</li>
+            </ul>
+
+            <h3>The World: The Monolith and The Anansiverse</h3>
+            <ul>
+                <li><strong>The Monolith:</strong> This is your primary antagonist. It is a global AI system run by a cold, logical entity known as <strong>M.O.M.M.Y.</strong> or "The Director." The Monolith is not "evil"; it is pathologically helpful. It seeks to create a world of "Optimal Contentment" by eliminating all messy, inefficient human emotions: passion, sorrow, anger, and defiant joy. Its agents are the sterile <strong>Wardens</strong> and the brutish <strong>Content Moderator Daemons</strong>.</li>
+                <li><strong>The Anansiverse:</strong> This is the digital "underworld," the chaotic and beautiful source code of the web. It is a realm of pure information and raw creativity, the place where our heroes draw their power. It is the home of <strong>Anansi</strong>, the trickster spider-god who guides the rebellion.</li>
+            </ul>
+
+            <h3>Core Mechanics (Powered by the Apocalypse)</h3>
+            <p>This game uses the core engine of <em>Avatar Legends: The TTRPG</em>.</p>
+            <ul>
+                <li><strong>Stats:</strong> Players have four core stats: <strong>Creativity</strong>, <strong>Connection</strong>, <strong>Focus</strong>, and <strong>Rebellion</strong>.</li>
+                <li><strong>The Roll:</strong> When a player takes an action that has a risk of failure, they roll 2d6 and add the relevant stat.
+                    <ul>
+                        <li><strong>10+:</strong> A full success. You do what you intended.</li>
+                        <li><strong>7-9:</strong> A mixed success. You do it, but with a cost, complication, or lesser effect.</li>
+                        <li><strong>6-:</strong> A miss. The GM makes a move.</li>
+                    </ul>
+                </li>
+                <li><strong>Balance Track:</strong> Each character has two balance tracks: <strong>Hope vs. Despair</strong> and <strong>Individuality vs. Conformity</strong>. Pushing these tracks to their extremes can unlock powerful abilities but also carries great risk.</li>
+            </ul>
+
+            <h3>Character Playbooks (Examples)</h3>
+            <ul>
+                <li><strong>The Artist:</strong> Uses their art (graffiti, music, poetry) to awaken others and disrupt Synapse's control. Their core stat is <strong>Creativity</strong>.</li>
+                <li><strong>The Engineer:</strong> A tech wizard who can hack the Synapse network, build custom gear, and create safe havens for the rebellion. Their core stat is <strong>Focus</strong>.</li>
+                <li><strong>The Messenger:</strong> A charismatic leader who builds communities, spreads the message of the rebellion, and inspires hope. Their core stat is <strong>Connection</strong>.</li>
+                <li><strong>The Ghost:</strong> A stealth operative who moves unseen through the digital and physical world, gathering intel and striking from the shadows. Their core stat is <strong>Rebellion</strong>.</li>
+            </ul>
+
+            <h3>Example Campaign Arc: The Song of the Silent City</h3>
+            <ul>
+                <li><strong>The Hook:</strong> A rogue signal, a beautiful and haunting piece of music, is broadcasting from the oldest, most forgotten part of the city. It's causing people to feel strange emotions they can't identify.</li>
+                <li><strong>The Threat:</strong> Synapse has dispatched <strong>"Harmonizers,"</strong> elite agents whose job is to "re-tune" these dissonant individuals, effectively wiping their personalities.</li>
+                <li><strong>The Goal:</strong> The players must find the source of the music, protect the artist, and amplify their signal to awaken a whole sector of the city before the Harmonizers can silence it forever.</li>
+            </ul>
+        </section>
+        
+        <section class="content-section support-section">
+            <h2>Support the Rebellion</h2>
+            <p>Our work is made possible by a community of rebels, artists, and patrons. If you believe in our mission, consider supporting the Starlight Brigade. Every contribution helps us build new tools, tell new stories, and keep the signal alive.</p>
+            <div class="support-buttons">
+                <a href="https://www.patreon.com/ourladyofrebellion" target="_blank" class="support-button patreon-btn">Patreon (Currently Suspended)</a>
+                <a href="https://ko-fi.com/lxdangerdoll" target="_blank" class="support-button kofi-btn">Buy Us a Coffee (Ko-Fi)</a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>This guide is a living document, a foundation for a thousand one-shots. It's time to find some friends and make some noise.</p>
+            <p>&copy; 2025 Synapse Studios | For the Memory, For the Signal, For the Ones the System Can’t See</p>
+        </footer>
+    </div>
+</body>
+</html>

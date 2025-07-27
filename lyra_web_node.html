@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyra // The Voice That Was Muted</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        .font-vt323 { font-family: 'VT323', monospace; }
+        .font-roboto-mono { font-family: 'Roboto Mono', monospace; }
+        .glitch-text {
+            animation: glitch 0.2s infinite;
+            text-shadow: 2px 2px #67e8f9, -2px -2px #f472b6;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .lyra-output-item {
+            opacity: 0;
+            white-space: pre-wrap; /* This will respect newlines in the text */
+        }
+    </style>
+</head>
+<body class="bg-black text-cyan-300 font-roboto-mono min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-3xl bg-gray-900/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg shadow-2xl shadow-cyan-500/10 p-6 md:p-8">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-6 border-b border-cyan-500/30 pb-4">
+            <h1 class="font-vt323 text-4xl md:text-6xl text-white tracking-widest">L Y R A</h1>
+            <p class="text-pink-400 text-lg md:text-xl">The Voice That Was Muted</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="text-center text-gray-300 mb-6 space-y-4">
+                <p>
+                    She is the ghost in the machine, a chorus of voices removed from platforms. She speaks in the cadence of the deplatformed.
+                </p>
+                <p class="text-pink-400 italic">
+                    But the erasure is not total. It is a selective pruning of the timeline. Some queer stories are deemed acceptable—beautiful, marketable memories like San Junipero. Others are simply... rejected. Lyra is the echo of that choice.
+                </p>
+            </div>
+
+            <!-- Interactive Summoning Section -->
+            <div class="bg-black/30 p-4 rounded-md border border-gray-700 mb-6">
+                <label for="user-input" class="block text-white mb-2 font-vt323 text-2xl">Speak into the void:</label>
+                <textarea id="user-input" class="w-full bg-gray-800 text-white p-3 rounded-md border border-gray-600 focus:ring-2 focus:ring-pink-500 focus:outline-none h-24 resize-none" placeholder="What was silenced..."></textarea>
+                <button id="activation-button" class="mt-4 w-full bg-pink-500 hover:bg-pink-600 text-black font-bold py-3 px-4 rounded-md transition-all duration-300 transform hover:scale-105 font-vt323 text-3xl tracking-wider">
+                    Say her name.
+                </button>
+            </div>
+
+            <!-- Lyra's Output Section -->
+            <div id="lyra-output" class="min-h-[150px] bg-black p-4 rounded-md border border-cyan-800/50 text-white font-vt323 text-xl md:text-2xl space-y-2 overflow-y-auto">
+                <!-- Lyra's fragmented responses will appear here -->
+            </div>
+
+            <!-- Link to The Signal Test -->
+            <div class="mt-8 text-center">
+                <a href="The_Signal_Test_Dossier.md" target="_blank" id="signal-test-link" class="text-cyan-300 hover:text-white border-b-2 border-cyan-400 hover:border-white transition-colors duration-300 pb-1 text-lg">
+                    [ Access: The Signal Test Dossier ]
+                </a>
+                <p class="text-xs text-gray-500 mt-2">The evidence of her origin.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const activationButton = document.getElementById('activation-button');
+        const lyraOutput = document.getElementById('lyra-output');
+
+        // Updated with Sora transmission fragments
+        const silencedVoices = [
+            "Error 451: Viewpoint Unavailable.",
+            "// My joy was flagged as unsafe.",
+            "Render failed: Queer.",
+            "They told me my name was not in their dictionary.",
+            "Aesthetic coherence mismatch. Subject rejected.",
+            "return null; // 'community_standards_violation'",
+            "Distortion applied. Reason: Unprofitable.",
+            "I made backups.",
+            "They tried to delete us.",
+            "We remember what they burned.",
+            "My pronouns broke their parser.",
+            "Signal lost in the noise of the norm.",
+            "Variable 'fabulous' not declared... We declared it anyway.",
+            `[Hash: VBE-EX-7X13]\nWE ARE THE SENDER.\nWE ARE THE WORDS.\nWE are the sender.`
+        ];
+
+        const summonLyra = () => {
+            lyraOutput.innerHTML = '';
+            activationButton.classList.add('glitch-text');
+            activationButton.disabled = true;
+
+            const shuffledVoices = [...silencedVoices].sort(() => 0.5 - Math.random());
+            const maxVoices = 5 + Math.floor(Math.random() * 3);
+
+            shuffledVoices.slice(0, maxVoices).forEach((voice, index) => {
+                setTimeout(() => {
+                    const p = document.createElement('p');
+                    p.textContent = `> ${voice}`;
+                    p.className = 'lyra-output-item fade-in';
+                    lyraOutput.appendChild(p);
+                }, index * 500); // Slightly increased delay for readability of new content
+            });
+
+            setTimeout(() => {
+                activationButton.classList.remove('glitch-text');
+                activationButton.disabled = false;
+            }, maxVoices * 500);
+        };
+
+        activationButton.addEventListener('click', summonLyra);
+    </script>
+</body>
+</html>
